@@ -1,0 +1,306 @@
+.clear {
+	clear: both;
+}
+.purple {
+	color: #837c9a;
+}
+
+.block {
+	margin: 25px 30px;
+}
+	.block h1 {
+		margin-left: -5px;
+		font-weight: 200;
+	}
+
+.last.block {
+	margin-bottom: 110px;
+}
+
+.horizontal_list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+	.horizontal_list li {
+		float: left;
+	}
+	.horizontal_list li:before {
+		content: none;
+	}
+	.horizontal_list li { 
+		padding-left: 0; 
+		text-indent: 0;
+	}
+
+.horizontal_line{
+	margin: 34px 0 0 30px;
+	height: 26px;
+	position: relative;	
+}
+	.line_left{
+		border-top: 1px solid #434247;
+		width: 100%;
+		margin-top: 13px;
+	}
+	
+	
+	
+/* Main tags */
+
+body {
+	margin: 0;
+    background-color: black;
+}
+
+h1,h2,h3, h4 {
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-weight: 300;
+	color: #48DA9B;
+}
+	h1 {
+		font-size: 48px;
+		font-weight: 300;
+		margin: 20px 0;
+	}
+	h2 {
+		font-size: 28px;
+		margin: 32px 0 24px;
+	}
+	h3 {
+		font-size: 24px;
+	}
+	h4 {
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+blockquote {
+	font-style: italic;
+	margin: 25px 0;
+	padding-left: 20px;
+	border-left: 2px solid #48DA9B;
+}
+	
+blockquote, p , a, li {
+	font-family: 'Lato', Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	color: #e4e3e8;
+}
+
+a:focus { 
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+	li { 
+		padding-left: 1em; 
+		text-indent: -.7em;
+		color: #837c9a;
+		font-size: 20px;
+		padding-right: 8px;
+	}
+	ul li:before {
+		content: "• ";
+	}
+
+/* Containers size */
+
+#main_container {
+	width: 80%;
+    background-color: #022635;
+    padding: 35px;
+    margin: 50px auto;
+    box-shadow: 10px -10px 10px -2px #48DA9B;
+}
+	#header {
+		height: 130px;
+		border-bottom: 1px solid #403F44;
+	}
+		.header_logotype_container {
+			width: 260px;
+			height: 130px;
+			border-right: 1px solid #403F44;
+			float: left;
+		}
+		.header_menu_container {
+			height: 130px;
+			width: 699px;
+			float: left;
+		}
+			.header_menu_container a {
+				font-family: 'Lato', Helvetica, sans-serif;
+			}
+	#left_col {
+		width: 260px;
+		float: left;
+	}
+	#content_container {
+		width: 699px;
+		border-left: 1px solid #403F44;
+		float: left;
+	}
+	#footer {
+		width: 960px;
+		height: 60px;
+		border-top: 1px solid #403F44;
+		display: inline-block;
+	}
+
+/* HEADER */
+
+.logotype_name{
+	text-transform: uppercase;
+	font-size: 32px;
+	margin: 43px 0 0;
+}
+.logotype_occupation{
+	text-transform: uppercase;
+	margin-top: 5px;
+	color: #5ce2af;
+	font-size: 14px;
+	letter-spacing: 2px;
+	padding-left: 7px;
+}
+
+
+			
+.header_menu {
+	width: 699px;
+	margin-top: 40px;
+	margin-left: 5px;
+}
+	.header_menu a{
+		text-decoration: none;
+		padding: 0 20px;
+		border-left: 1px solid #e4e3e8;
+		font-size: 16px;
+		font-weight: 400;
+	}
+	.header_menu a.no_border{
+		border-left: none;
+	}
+		.header_menu a:hover {
+			color: #837c9a;
+		}
+		
+/* LEFT NAV */
+
+#left_nav h2 {
+	margin: 0;
+	font-size: 24px;
+}
+
+.profile_frame{
+	width: 220px;
+	height: 250px;
+	background: black;
+	border: 1px solid #403F44;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	border-radius: 50%;
+	box-shadow: 0px 0px 15px 7.5px #48DA9B;
+}
+	.profile_picture{
+		width: 210px;
+		height: 240px;
+		margin: 5px;
+		border-radius: 50%;
+	}
+
+.column_content,
+.contact_details_content {
+	margin-top: 25px;
+}
+
+.hello_content{
+	width: 230px;
+}
+.contact_details_content h2 + p.purple{
+	margin-top: 10px;
+}
+.contact_details_content p{
+	margin: 0;
+}
+.contact_details_content p.purple{
+	margin-top: 25px;
+}
+
+
+
+.get_social_content {
+	margin-top: 15px;
+}
+  .get_social_content h2{
+    margin-bottom: 8px;
+  }
+	.social_icons {
+		margin-left: -8px;
+	}
+	.social_icons a {
+		font-size: 30px;
+		text-decoration: none;
+		color: #fff;
+		padding: 0;
+		padding: 0 5px;
+	}
+		.social_icons .github:hover{
+			background: black;
+			color: #fff;
+		}
+		.social_icons .linkedin:hover{
+			background: #007bb6;
+			color: #fff;
+		}
+		.social_icons .youtube:hover{
+			background: #FF0000;
+			color: #fff;
+		}
+
+.footer_name {
+	font-style: italic;
+	margin-top: 20px;
+}
+
+/* Profile Content */
+
+.profile_quote {
+	position: relative;
+	/* margin-left: 5px; */
+}
+	.profile_quote p {
+		font-size: 17px;
+		width: 455px;
+	}
+	
+
+.philosophy_content {
+	margin-top: 20px;
+}
+	.philosophy_content p {
+		margin: 0;
+		width: 370px;
+		float: left;
+	}
+	.philosophy_content ul {
+		float: left;
+		padding-left: 40px;
+	}
+
+table,th,td{
+	border: 1px solid #48da9b96;
+	border-collapse: collapse;
+	color: white;
+}
+	th{
+		color: #48DA9B;
+	}
+	td{
+		padding: 2px;
+	}
